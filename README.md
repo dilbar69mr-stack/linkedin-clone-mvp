@@ -1,48 +1,47 @@
 # LinkedIn Clone MVP
 
-This repository contains a full-stack MVP for a LinkedIn-inspired professional social platform.
+A polished LinkedIn-inspired professional networking app starter built as a full-stack MVP.
+
+## Current status
+
+- Frontend scaffold is live with a home feed, profile, network, jobs, and messaging screens
+- Backend API is active with health and sample auth/data endpoints
+- Project is structured as a monorepo with separate frontend and backend workspaces
 
 ## Stack
 
 - Frontend: React + Vite + TypeScript + Tailwind CSS
 - Backend: Node.js + Express + TypeScript
-- Database: PostgreSQL (planned)
-- Auth: JWT with password hashing
-- Real-time: Socket.IO-ready architecture
+- Database: PostgreSQL planned for the next phase
+- Auth: JWT-ready starter endpoints
+- Real-time: Socket.IO-ready architecture for chats and notifications
 
-## Monorepo structure
+## Repository structure
 
-- `frontend/` – user interface and client app
-- `backend/` – REST API and server logic
-- `README.md` – project overview and roadmap
+- `frontend/` - React application UI and pages
+- `backend/` - Express API server
+- `README.md` - project overview and roadmap
 
 ## Quick start
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+From the repo root:
 
-2. Start the app:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+npm run dev
+```
 
-3. Open the frontend:
-   - http://localhost:5173
+This runs the frontend on `http://localhost:5173` and the backend on `http://localhost:4000`.
 
-4. API base:
-   - http://localhost:4000
+## MVP roadmap
 
-## Planned features
+1. Authentication and user profiles
+2. Post feed and interactions
+3. Connections and network suggestions
+4. Jobs and applications
+5. Messaging and notifications
+6. Deployment and polish
 
-- User authentication and profile management
-- Home feed with posts and comments
-- Connection requests and network suggestions
-- Job board and applications
-- Messaging and notification flows
-- Recruiter/company profile support
+## Notes
 
-## Architecture plan
-
-See the `README.md` in the project root for the product architecture and development roadmap.
+This version uses mock data to give you a working app foundation. The next phase adds a real PostgreSQL schema, Prisma, secure auth, and production-ready APIs.
